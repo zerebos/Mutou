@@ -29,7 +29,8 @@ client.registry.registerGroups([
     ["botadmin", "Bot Admin"],
     ["meta", "Meta"],
     ["moderation", "Moderation"],
-    ["rules", "Rules"]
+    ["rules", "Rules"],
+    ["assignableroles", "Assignable Roles"]
 ]);
 
 client.registry.registerDefaultTypes();

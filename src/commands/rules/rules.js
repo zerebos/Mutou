@@ -38,7 +38,7 @@ module.exports = class extends Command {
         let description = "";
         for (const id in ruleset) {
             const title = id === "server" ? "" : `<#${id}>\n`;
-            const rules = ruleset[id].map((r, i) => `${i + 1}. ${r}\n`);
+            const rules = ruleset[id].map((r, i) => `${i + 1}. ${r}`).join("\n");
             description += title + rules + "\n";
         }
 

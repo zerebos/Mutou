@@ -19,6 +19,7 @@
     "node-opus": "^0.3.3",
     "sodium": "^3.0.2",
     "sqlite": "^3.0.6",
+    "sqlite3": "^5.0.2",
     "string-similarity": "^4.0.1",
     "utf-8-validate": "^5.0.2"
   }
