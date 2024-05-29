@@ -1,11 +1,12 @@
 const path = require("path");
 const sqlite = require("sqlite");
+const sqlite3 = require("sqlite3");
 const Extensions = require("./ext");
 Extensions.addAll();
 
 
 const Commando = require("discord.js-commando");
-const config = require("../config");
+const config = require("../config.json");
 
 
 const client = new Commando.Client({
@@ -45,6 +46,6 @@ client.registry.registerDefaultCommands({
 
 client.registry.registerCommandsIn(path.join(__dirname, "commands"));
 
-client.setProvider(sqlite.open(path.join(__dirname, "..", "settings.sqlite3")).then(db => new Commando.SQLiteProvider(db))).catch(console.error);
+client.setProvider(sqlite.open({driver: sqlite3.Database, filename: path.join(__dirname, "..", "settings.sqlite3")}).then(db => new Commando.SQLiteProvider(db))).catch(console.error);
 
 client.login(config.token);

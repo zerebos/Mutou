@@ -1,3 +1,4 @@
 node_modules/
 config.json
 settings.sqlite3
+config.*.json

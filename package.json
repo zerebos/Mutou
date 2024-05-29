@@ -1,7 +1,7 @@
 {
-  "name": "experientia",
+  "name": "mutou",
   "version": "1.0.0",
-  "description": "Levelling bot for Discord.",
+  "description": "Basic management bot for YHS.",
   "main": "src/index.js",
   "repository": "",
   "scripts": {
@@ -11,9 +11,12 @@
   "author": "Zack Rauen",
   "license": "MIT",
   "dependencies": {
+    "bufferutil": "^4.0.1",
     "cheerio": "^1.0.0-rc.3",
     "discord.js": "^12.2.0",
     "discord.js-commando": "github:discordjs/Commando",
-    "sqlite3": "^5.0.2"
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2",
+    "utf-8-validate": "^5.0.2"
   }
 }
