@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  mutou:
+    container_name: mutou
+    build: .
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./settings.sqlite3:/app/settings.sqlite3
+      - ./config.json:/app/config.json
